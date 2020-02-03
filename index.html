@@ -402,6 +402,229 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://love-h.github.io/2020/02/03/win10安装jdk1.8/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="猪仔">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LH">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2020/02/03/win10安装jdk1.8/" class="post-title-link" itemprop="https://love-h.github.io/index.html">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-02-03 22:12:24" itemprop="dateCreated datePublished" datetime="2020-02-03T22:12:24+08:00">2020-02-03</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-02-02 22:00:07" itemprop="dateModified" datetime="2020-02-02T22:00:07+08:00">2020-02-02</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">697</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>一 下载安装文件</p>
+<pre><code>jdk的安装与配置是Java学习的第一步，下面记录一下具体过程。首先根据自己系统下载对应版本。下载地址http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+</code></pre><p>二 安装</p>
+<pre><code>双击exe文件，按照默认设置一步一步安装。
+</code></pre><p>三 配置环境变量</p>
+<pre><code>右键“此电脑”——“属性”——“高级系统设置”——“高级”——“环境变量”——“新建”：
+</code></pre><p><img src="/2020/02/03/win10安装jdk1.8/image-20200202215435718.png" alt="image-20200202215435718"></p>
+<pre><code>1.新建环境变量JAVA_HOME
+
+变量名：JAVA_HOME；
+
+变量值：D:\JDK\jdk1.8.0_161 。变量值是自己的jdk安装目录：
+
+
+
+2.新建环境变量CLASSPATH
+
+变量名：CLASSPATH
+
+变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar 【需要注意变量值前面的“.;”】
+
+
+
+3.配置环境变量Path
+
+双击Path，点击新建，添加“%JAVA_HOME%\bin”；再次点击新建，添加“%JAVA_HOME%\jre\bin”。
+
+这里要特别注意一下，win10环境变量值是一行一行的，不要直接点击新建，添加“%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;”，否则会出现“javac不是内部或外部命令”错误。
+</code></pre><p><img src="/2020/02/03/win10安装jdk1.8/image-20200202215722293.png" alt="image-20200202215722293"></p>
+<pre><code>此时环境配置完成~
+</code></pre><p>四 命令行窗口查看</p>
+<pre><code>Win+R键弹出运行窗口，输入cmd命令打开如下窗口来测试下自己的Java是否安装成功；测试命令Java，若出现下图信息的话就证明Java环境已经配置成功了。
+</code></pre><p><img src="/2020/02/03/win10安装jdk1.8/image-20200202220005337.png" alt="image-20200202220005337"></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+	
+	<div>
+    
+	</div>
+
+	<div>
+      
+	</div>
+	
+	
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://love-h.github.io/2020/02/02/Hello-World/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -707,7 +930,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66j3e26002a00u84e0gzbdy" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66ja1oo00285ku8s6oz53bh" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/../images/1570111396449.png" itemprop="contentUrl">
               </a>
             
@@ -919,7 +1142,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66j3e1t001t00u8s2o3b0md" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66ja1oh001w5ku8kdtciotv" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/../images/1570111396449.png" itemprop="contentUrl">
               </a>
             
@@ -1131,7 +1354,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66j3e1i001c00u8gxr39vg3" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66ja1o300155ku8b3mcn5d8" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/../images/1570111396449.png" itemprop="contentUrl">
               </a>
             
@@ -1343,7 +1566,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/../images/geekH_2019-10-05_01-50-23.png" rel="gallery_ck66j3e0p000800u8lz84ahzt" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/../images/geekH_2019-10-05_01-50-23.png" rel="gallery_ck66ja1nd00035ku86c52bnnb" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/../images/geekH_2019-10-05_01-50-23.png" itemprop="contentUrl">
               </a>
             
@@ -1543,7 +1766,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66j3e17000v00u878uw0d6g" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66ja1ny000v5ku84tj9xyus" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/../images/1570111396449.png" itemprop="contentUrl">
               </a>
             
@@ -1743,7 +1966,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66j3e0z000k00u8q2t7qrbu" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/../images/1570111396449.png" rel="gallery_ck66ja1nm000b5ku8kp4rkup8" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/../images/1570111396449.png" itemprop="contentUrl">
               </a>
             
@@ -2141,7 +2364,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/../images/geekH_2019-10-13_22-05-09.png" rel="gallery_ck66j3e19000z00u8wmal9rue" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/../images/geekH_2019-10-13_22-05-09.png" rel="gallery_ck66ja1o200145ku893k57akb" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/../images/geekH_2019-10-13_22-05-09.png" itemprop="contentUrl">
               </a>
             
@@ -2160,218 +2383,6 @@
           
             <div class="post-button text-center">
               <a class="btn" href="/2019/10/13/StarUML破解/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-         
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-	
-	<div>
-    
-	</div>
-
-	<div>
-      
-	</div>
-	
-	
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://love-h.github.io/2019/10/08/20191008/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="猪仔">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LH">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/10/08/20191008/" class="post-title-link" itemprop="https://love-h.github.io/index.html">20191008</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-10-08 23:57:21" itemprop="dateCreated datePublished" datetime="2019-10-08T23:57:21+08:00">2019-10-08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-10-21 00:31:43" itemprop="dateModified" datetime="2019-10-21T00:31:43+08:00">2019-10-21</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">1.4k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-        <div class="post-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/../images/geekH_2019-10-05_01-50-23.png" rel="gallery_ck66j3e0m000500u88o5mmm1x" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="/../images/geekH_2019-10-05_01-50-23.png" itemprop="contentUrl">
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
-
-      
-        
-          <blockquote class="blockquote-center"><p>每日总结</p>
-</blockquote>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/10/08/20191008/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2474,7 +2485,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">48</span>
+                    <span class="site-state-item-count">49</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
