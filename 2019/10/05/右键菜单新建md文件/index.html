@@ -138,7 +138,7 @@
 <meta property="og:description" content="新建md文件并自定义模板">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://love-h.github.io/2019/10/05/images/geekH_2019-10-05_01-40-34.png">
-<meta property="og:updated_time" content="2020-01-07T09:01:13.429Z">
+<meta property="og:updated_time" content="2020-02-07T08:00:46.558Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="右键菜单新建md文件">
 <meta name="twitter:description" content="新建md文件并自定义模板">
@@ -467,7 +467,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-01-07 17:01:13" itemprop="dateModified" datetime="2020-01-07T17:01:13+08:00">2020-01-07</time>
+                <time title="修改时间：2020-02-07 16:00:46" itemprop="dateModified" datetime="2020-02-07T16:00:46+08:00">2020-02-07</time>
               
             
           </span>
@@ -501,7 +501,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">243</span>
+                <span title="本文字数">708</span>
               
 
               
@@ -537,7 +537,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/../images/geekH_2019-10-05_01-40-34.png" rel="gallery_ck66ncsi10023ewu8o3azckn0" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/../images/geekH_2019-10-05_01-40-34.png" rel="gallery_ck6rei3ef002dtku87drozid1" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/../images/geekH_2019-10-05_01-40-34.png" itemprop="contentUrl">
               </a>
             
@@ -558,14 +558,23 @@
 </ul>
 <p><img src="/2019/10/05/右键菜单新建md文件/1570205571014.png" alt="1570205571014"></p>
 <ul>
-<li>打开<code>计算机\HKEY_CLASSES_ROOT\.md\ShellNew</code></li>
+<li>打开<code>计算机\HKEY_CLASSES_ROOT</code>右键查找，输入<code>Typora</code></li>
 </ul>
-<p><img src="/2019/10/05/右键菜单新建md文件/1570205679143.png" alt="1570205679143"></p>
+<p><img src="/2019/10/05/右键菜单新建md文件/image-20200207155044158.png" alt="image-20200207155044158"></p>
 <ul>
-<li><p>右键<code>ShellNew</code>，新建字符串值，<code>NullFile</code></p>
-<p><img src="/2019/10/05/右键菜单新建md文件/1570205900666.png" alt="1570205900666"></p>
-</li>
+<li>确认是否有该程序可运行</li>
 </ul>
+<p><img src="/2019/10/05/右键菜单新建md文件/image-20200207155226305.png" alt="image-20200207155226305"></p>
+<p>如果使用的是其他markdown编辑器，同理</p>
+<ul>
+<li>新建<code>.reg</code>文件，输入以下内容</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=&quot;Typora.exe&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;NullFile&quot;=&quot;&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=&quot;Markdown&quot;</span><br></pre></td></tr></table></figure>
+<p><code>@=&quot;Typora.exe&quot;</code> 代表的是指定.md文件的运行程序</p>
+<p><code>@=&quot;Markdown&quot;</code> 代表的是右键时默认的文件名字，这样写新建为<code>新建Markdown.md</code>文件，而且右键菜单中显示<code>MarkDown</code></p>
+<p>编辑好之后,双击运行，结果如图所示:</p>
+<p><img src="/2019/10/05/右键菜单新建md文件/image-20200207155815542.png" alt="image-20200207155815542"></p>
+<p><img src="/2019/10/05/右键菜单新建md文件/image-20200207155829660.png" alt="image-20200207155829660"></p>
 <hr>
 <h4 id="给新建md文件自定义模板"><a href="#给新建md文件自定义模板" class="headerlink" title="给新建md文件自定义模板"></a>给新建md文件自定义模板</h4><h5 id="效果图：-1"><a href="#效果图：-1" class="headerlink" title="效果图："></a>效果图：</h5><p><img src="/2019/10/05/右键菜单新建md文件/1570210562422.png" alt="1570210562422"></p>
 <h5 id="实现方法："><a href="#实现方法：" class="headerlink" title="实现方法："></a>实现方法：</h5><ul>
@@ -573,10 +582,15 @@
 </ul>
 <p><img src="/2019/10/05/右键菜单新建md文件/1570205921150.png" alt="1570205921150"></p>
 <ul>
-<li>打开<code>C:\Windows\SHELLNEW</code>，新建<code>hexo.md</code>，写入所需内容</li>
+<li>打开<code>C:\Windows\SHELLNEW</code>(若没有则新建)，新建<code>hexo.md</code>，写入所需内容</li>
 </ul>
 <p><img src="/2019/10/05/右键菜单新建md文件/1570205483545.png" alt="1570205483545"></p>
 <p><img src="/2019/10/05/右键菜单新建md文件/1570205950799.png" alt="1570205950799"></p>
+<h4 id="编辑新建图标-非必须"><a href="#编辑新建图标-非必须" class="headerlink" title="编辑新建图标(非必须)"></a>编辑新建图标(非必须)</h4><ol>
+<li>以<code>Typora</code>为例,在注册表<code>Typora.exe</code>下点击项<code>DefaultIcon</code>,右键修改</li>
+<li>将属性修改为想要设置的Markdown文件图标</li>
+</ol>
+<p><a href="https://stepneverstop.github.io/win-rightclick-create-md/20181229105300.png" target="_blank" rel="noopener"><img src="/2019/10/05/右键菜单新建md文件/20181229105300.png" alt="img"></a></p>
 
       
     </div>
@@ -610,7 +624,7 @@
   <p><span>本文标题:</span><a href="/2019/10/05/右键菜单新建md文件/">右键菜单新建md文件</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 猪仔 的个人博客">猪仔</a></p>
   <p><span>发布时间:</span>2019年10月05日 - 00:10</p>
-  <p><span>最后更新:</span>2020年01月07日 - 17:01</p>
+  <p><span>最后更新:</span>2020年02月07日 - 16:02</p>
   <p><span>原始链接:</span><a href="/2019/10/05/右键菜单新建md文件/" title="右键菜单新建md文件">https://love-h.github.io/2019/10/05/右键菜单新建md文件/</a>
     <span class="copy-path" title="点击复制链接"><i class="fa fa-clipboard" data-clipboard-text="https://love-h.github.io/2019/10/05/右键菜单新建md文件/" aria-label="复制成功！"></i></span>
   </p>
@@ -773,7 +787,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">53</span>
+                    <span class="site-state-item-count">55</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -895,7 +909,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">39</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">43</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1012,7 +1034,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#右键菜单新建md文件"><span class="nav-number">1.</span> <span class="nav-text">右键菜单新建md文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#效果图："><span class="nav-number">1.1.</span> <span class="nav-text">效果图：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实现方法"><span class="nav-number">1.2.</span> <span class="nav-text">实现方法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#给新建md文件自定义模板"><span class="nav-number">2.</span> <span class="nav-text">给新建md文件自定义模板</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#效果图：-1"><span class="nav-number">2.1.</span> <span class="nav-text">效果图：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实现方法："><span class="nav-number">2.2.</span> <span class="nav-text">实现方法：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#右键菜单新建md文件"><span class="nav-number">1.</span> <span class="nav-text">右键菜单新建md文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#效果图："><span class="nav-number">1.1.</span> <span class="nav-text">效果图：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实现方法"><span class="nav-number">1.2.</span> <span class="nav-text">实现方法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#给新建md文件自定义模板"><span class="nav-number">2.</span> <span class="nav-text">给新建md文件自定义模板</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#效果图：-1"><span class="nav-number">2.1.</span> <span class="nav-text">效果图：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实现方法："><span class="nav-number">2.2.</span> <span class="nav-text">实现方法：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编辑新建图标-非必须"><span class="nav-number">3.</span> <span class="nav-text">编辑新建图标(非必须)</span></a></li></ol></div>
             
 
           </div>
@@ -1056,7 +1078,7 @@
     
       <span class="post-meta-item-text">博客全站总字数：</span>
     
-    <span title="博客全站总字数">119k</span>
+    <span title="博客全站总字数">124k</span>
   
 
   

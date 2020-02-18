@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://love-h.github.io/"/>
-  <updated>2020-02-03T16:04:41.111Z</updated>
+  <updated>2020-02-03T15:44:52.451Z</updated>
   <id>https://love-h.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客备份</title>
+    <link href="https://love-h.github.io/2020/02/03/hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/"/>
+    <id>https://love-h.github.io/2020/02/03/hexo博客备份/</id>
+    <published>2020-02-03T11:48:34.000Z</published>
+    <updated>2020-02-03T15:44:52.451Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>hexo博客备份</p></blockquote><a id="more"></a><h3 id="安装Node-js环境"><a href="#安装Node-js环境" class="headerlink" title="安装Node.js环境"></a>安装<code>Node.js</code>环境</h3><ul><li><p>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a><br><img src="/2020/02/03/hexo博客备份/14065724-26dc94b1d56004ad.png" alt=""></p></li><li><p>一路点next，不要怂</p></li></ul><p><img src="/2020/02/03/hexo博客备份/14065724-1bbe24f6b5f1baa4.png" alt=""></p><ul><li>查看是否安装成功：打开 cmd 命令行(win+r 输入 cmd 回车)执行 ：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p><img src="/2020/02/03/hexo博客备份/14065724-21555a3c1961b240.png" alt="安装版本号"></p><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><ul><li><p>安装Git</p></li><li><p>下载地址：<a href="http://www.git-scm.com/download/" title="Git - Downloads" target="_blank" rel="noopener">http://www.git-scm.com/download/</a><br><img src="/2020/02/03/hexo博客备份/14065724-cac3efe1be3181af.png" alt=""></p></li><li><p>同上，一路点next </p></li></ul><p><img src="/2020/02/03/hexo博客备份/14065724-9d4bb97a2476c33e.png" alt=""></p><ul><li>验证是否成功<br>安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</li></ul><p><img src="/2020/02/03/hexo博客备份/14065724-e5de74752fb96238.png" alt=""></p><ul><li>初始化仓库，并绑定</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin xxx(仓库地址)</span><br></pre></td></tr></table></figure><h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><ul><li><p>安装hexo</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li></ul><h3 id="Final"><a href="#Final" class="headerlink" title="Final"></a>Final</h3><p>切记博客上传命令为</p><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;hexo博客备份&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://love-h.github.io/tags/hexo/"/>
+    
+      <category term="博客备份" scheme="https://love-h.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>git安装</title>
@@ -38,25 +61,80 @@
   </entry>
   
   <entry>
-    <title>hexo博客备份</title>
-    <link href="https://love-h.github.io/2020/02/03/hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/"/>
-    <id>https://love-h.github.io/2020/02/03/hexo博客备份/</id>
+    <title>阿里云主机+宝塔Linux从零建站(二)</title>
+    <link href="https://love-h.github.io/2020/02/03/%E9%98%BF%E9%87%8C%E4%BA%91%E4%B8%BB%E6%9C%BA+%E5%AE%9D%E5%A1%94Linux%E4%BB%8E%E9%9B%B6%E5%BB%BA%E7%AB%99(%E4%BA%8C)/"/>
+    <id>https://love-h.github.io/2020/02/03/阿里云主机+宝塔Linux从零建站(二)/</id>
     <published>2020-02-03T11:48:34.000Z</published>
-    <updated>2020-02-03T15:44:52.451Z</updated>
+    <updated>2020-02-18T04:33:46.992Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>hexo博客备份</p></blockquote><a id="more"></a><h3 id="安装Node-js环境"><a href="#安装Node-js环境" class="headerlink" title="安装Node.js环境"></a>安装<code>Node.js</code>环境</h3><ul><li><p>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a><br><img src="/2020/02/03/hexo博客备份/14065724-26dc94b1d56004ad.png" alt=""></p></li><li><p>一路点next，不要怂</p></li></ul><p><img src="/2020/02/03/hexo博客备份/14065724-1bbe24f6b5f1baa4.png" alt=""></p><ul><li>查看是否安装成功：打开 cmd 命令行(win+r 输入 cmd 回车)执行 ：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p><img src="/2020/02/03/hexo博客备份/14065724-21555a3c1961b240.png" alt="安装版本号"></p><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><ul><li><p>安装Git</p></li><li><p>下载地址：<a href="http://www.git-scm.com/download/" title="Git - Downloads" target="_blank" rel="noopener">http://www.git-scm.com/download/</a><br><img src="/2020/02/03/hexo博客备份/14065724-cac3efe1be3181af.png" alt=""></p></li><li><p>同上，一路点next </p></li></ul><p><img src="/2020/02/03/hexo博客备份/14065724-9d4bb97a2476c33e.png" alt=""></p><ul><li>验证是否成功<br>安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</li></ul><p><img src="/2020/02/03/hexo博客备份/14065724-e5de74752fb96238.png" alt=""></p><ul><li>初始化仓库，并绑定</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin xxx(仓库地址)</span><br></pre></td></tr></table></figure><h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><ul><li><p>安装hexo</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li></ul><h3 id="Final"><a href="#Final" class="headerlink" title="Final"></a>Final</h3><p>切记博客上传命令为</p><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>]]></content>
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>如何安装宝塔以及用wordpress建站</p></blockquote><a id="more"></a><p>123</p>]]></content>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;hexo博客备份&lt;/p&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;如何安装宝塔以及用wordpress建站&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
     
-      <category term="hexo" scheme="https://love-h.github.io/tags/hexo/"/>
+      <category term="Linux" scheme="https://love-h.github.io/tags/Linux/"/>
     
-      <category term="博客备份" scheme="https://love-h.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/"/>
+      <category term="宝塔" scheme="https://love-h.github.io/tags/%E5%AE%9D%E5%A1%94/"/>
+    
+      <category term="阿里云主机" scheme="https://love-h.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91%E4%B8%BB%E6%9C%BA/"/>
+    
+      <category term="建站" scheme="https://love-h.github.io/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云主机+宝塔Linux从零建站(一)</title>
+    <link href="https://love-h.github.io/2020/02/03/%E9%98%BF%E9%87%8C%E4%BA%91%E4%B8%BB%E6%9C%BA+%E5%AE%9D%E5%A1%94Linux%E4%BB%8E%E9%9B%B6%E5%BB%BA%E7%AB%99/"/>
+    <id>https://love-h.github.io/2020/02/03/阿里云主机+宝塔Linux从零建站/</id>
+    <published>2020-02-03T11:48:34.000Z</published>
+    <updated>2020-02-18T04:31:24.183Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>如何安装宝塔以及用wordpress建站</p></blockquote><a id="more"></a><h2 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h2><h3 id="安装putty"><a href="#安装putty" class="headerlink" title="安装putty"></a>安装putty</h3><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/image-20200218120504416.png" alt="image-20200218120504416"></p><p>由于Windows是不能直接连接到Linux服务器的，需要一个SSH的软件，推荐使用putty作为远程连接软件，它是开源免费使用的</p><p>软件安装过程这里就不再多说了，没有什么需要注意的</p><h3 id="连接到服务器"><a href="#连接到服务器" class="headerlink" title="连接到服务器"></a>连接到服务器</h3><p>安装好了putty软件之后，就可以开始连接到服务器了，提前准备好服务器的IP、账号、密码</p><ul><li>填写服务器ip，并点击<code>open</code></li></ul><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/image-20200218120936794.png" alt="image-20200218120936794"></p><ul><li>输入服务器名称和密码(ps:为了安全，此处密码不会显示出来，故输入完回车即可)</li></ul><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/image-20200218121228963.png" alt="image-20200218121228963"></p><ul><li>出现如图所示，则登陆成功</li></ul><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/image-20200218121332418.png" alt="image-20200218121332418"></p><h3 id="安装宝塔面板"><a href="#安装宝塔面板" class="headerlink" title="安装宝塔面板"></a>安装宝塔面板</h3><blockquote><p>再三声明，以下信息源自：<a href="https://themeforwp.net/wp-content/uploads/2018/06/20180613225752.webp，本人仅对其备份留以自用" target="_blank" rel="noopener">https://themeforwp.net/wp-content/uploads/2018/06/20180613225752.webp，本人仅对其备份留以自用</a></p></blockquote><p>输入下面的命令并执行(最新宝塔面板需要在centos7系统用，<a href="https://www.bt.cn/bbs/thread-19376-1-1.html" target="_blank" rel="noopener">其他系统的命令查看这里</a>)</p><p><code>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; bash install.sh</code></p><p>安装中途会脚本询问是否将网站安装在www目录，直接选择y，然后确认即可，大概会需要几分钟的时间</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180613225752.jpg" alt="宝塔面板安装成功显示登陆信息"></p><p>最后得到了宝塔面板的登陆信息，将这些保存下来</p><p>更新：宝塔面板为了提升安全，已将面板路径在之前的8888端口增加了随机入口，所以最好将登录信息长期保存，以后面板的管理都需要用到这些信息</p><h3 id="安装网站环境"><a href="#安装网站环境" class="headerlink" title="安装网站环境"></a>安装网站环境</h3><p>使用刚刚获得到的信息，浏览器访问你的后台，登陆宝塔面板(地址一般为<a href="http://ip:8888/随机字符串，账号密码也就是刚刚安装完显示的，这里一定要将这些登陆信息保存好" target="_blank" rel="noopener">http://ip:8888/随机字符串，账号密码也就是刚刚安装完显示的，这里一定要将这些登陆信息保存好</a>)</p><p>注意：如果使用的是阿里云之类的云服务器提前开放安全端口，包括8888、80、443等</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614070418.jpg" alt="宝塔面板后台登陆"></p><p>首次登陆宝塔面板后台，会弹出一键安装环境，在这里我们需要耐心设置一遍</p><p>仔细看下图中的设置，安装环境主要有3个点</p><ol><li>选择LNMP环境，节省资源</li><li>调整Mysql和PHP版本</li><li>安装方式选择为编译安装</li></ol><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614070705.jpg" alt="宝塔面板选择软件版本"></p><p>最好是按照上图的配置安装，可能有朋友会问为什么不选择 PHP7.2，这里主要是考虑到各种主题和插件的最大兼容，如果选择PHP7.2的话可能会有一些奇怪的问题，当然如果后期主题和插件都兼容了也可以切换到7.2。还有一点就是如果服务器为512M内存要选择Mysql5.5，不然压力会很大</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614071911.jpg" alt="宝塔面板安装web环境"></p><p>LNMP环境编译安装过程大概为半小时左右，视服务器性能而定</p><h2 id="搭建Wordpress网站"><a href="#搭建Wordpress网站" class="headerlink" title="搭建Wordpress网站"></a>搭建Wordpress网站</h2><p>当服务器LNMP环境安装完成之后，我们就可以开始着手<strong>搭建Wordpress网站</strong>了，这里就是建站的主要步骤，用过虚拟主机的朋友应当非常熟悉</p><h3 id="新建站点"><a href="#新建站点" class="headerlink" title="新建站点"></a>新建站点</h3><p>选择网站 – 添加站点，首先填入自己的域名，一般是 domain.com 和 <a href="http://www.domain.com" target="_blank" rel="noopener">www.domain.com</a> 两种格式都要绑定，并创建FTP和数据库</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614125432.jpg" alt="宝塔面板绑定域名，添加站点信息"></p><p>创建完成后会在网站列表中显示，这里面的密码记不记无所谓，可以随时查看，后期还要通过这里进行网站管理</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614125517.jpg" alt="宝塔面板添加网站完成"></p><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>服务器已经绑定了域名，接下来就是添加解析了，其实就是添加2条A记录，非常简单，这里我用的是腾讯云域名，其他的服务商可能稍微有些不同</p><p>登陆控制台，选择域名注册 – 找到自己的域名 – 解析</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614125727.jpg" alt="腾讯云域名设置"></p><p>和服务器绑定一致，域名也是添加2条记录，一个是www对应 <a href="http://www.domain.com，另一个是@，对应domain.com，全部解析到服务器的ip地址" target="_blank" rel="noopener">www.domain.com，另一个是@，对应domain.com，全部解析到服务器的ip地址</a></p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614125854-800x250.jpg" alt="腾讯云添加域名解析记录"></p><p>解析完成后访问域名，如果显示 <em>恭喜, 站点创建成功</em>，就证明解析完成，可以进入下一步的网站搭建了，如果还不能访问，稍等几分钟再尝试</p><p>注意，有些国外域名解析的话生效较慢，需要等待一天左右时间</p><h3 id="下载Wordpress安装包"><a href="#下载Wordpress安装包" class="headerlink" title="下载Wordpress安装包"></a>下载Wordpress安装包</h3><p>因为需要到<strong>wordpress官网</strong>下载程序，就采用的是<strong>宝塔的远程</strong>下载功能，先教大家如何使用</p><p>我们进入宝塔后台 – 文件，可以看到这就是服务器的文件系统，默认的/www目录就是所有网站的目录，可以看到刚刚我们创建的网站 wpwp.xyz，我们点击就能就入网站里面</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614133227.jpg" alt="宝塔面板文件管理"></p><p>可以看到网站下还很空，可以先把2个没用的 index.html 和 404.html 删除</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614133423-800x333.jpg" alt="宝塔面板删除无用的文件"></p><p>在文件的上方，我们可以看到在上传的右边有一个<strong>远程下载</strong>的按钮，点击会弹出一个对话框</p><p>这里我们就填入<a href="https://wp.xz.cn/" target="_blank" rel="noopener">wordpress最新版</a>的下载地址，确定之后就会下载到当前的目录</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/image-20200218122205145.png" alt="image-20200218122205145"></p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614133907.jpg" alt="宝塔面板远程下载wordpress到服务器"></p><p>等待一会下载完成后，点击一下刷新按钮，就能看到Wordpress程序的压缩包</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614134338.jpg" alt="wordpress安装包下载成功"></p><p>选择右键 – 解压，直接确定</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614134711.jpg" alt="宝塔文件管理解压wordpress安装包"></p><p>解压完成后网站根目录会多出一个wordpress的文件夹</p><p>但这样不能直接使用的，我们还要继续将wordpress文件夹内的所有文件移动到网站的根目录</p><p>选中所有文件，然后剪切，然后到网站根目录粘贴所有</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614134952.jpg" alt="宝塔面板剪切wordpress主文件"></p><p>最后的目录结构如下图就行了</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614135525.jpg" alt="wordpress网站目录结构"></p><h3 id="WordPress安装"><a href="#WordPress安装" class="headerlink" title="WordPress安装"></a>WordPress安装</h3><p>环境和程序都就绪了，接下来就可以开始安装Wordpress网站了</p><p>访问 <a href="http://www.domain.com，进入程序安装界面，第一步选择" target="_blank" rel="noopener">www.domain.com，进入程序安装界面，第一步选择</a> 现在就开始</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614150844-800x444.jpg" alt="开始安装wordpress网站"></p><p>进入到数据库配置界面，因为我们之前新建网站时已经创建了对应网站的数据库，直接填写信息就行，具体的参数可以到宝塔后台 – 数据库查看详细</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614151306.jpg" alt="wordpress数据库信息查看"></p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614151333.jpg" alt="wordpress站点配置数据库信息"></p><p>出现如下的提示，证明数据库信息没有问题</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614151451.jpg" alt="wordpress数据库连接成功"></p><p>接下来是配置网站的基本信息，为了安全用户名最好不要使用admin，如果只是网站的测试阶段，要勾选禁止搜索引擎，网站搭建完毕后再开放抓取</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614151737.jpg" alt="设置wordpress网站基本信息"></p><p>WordPress网站搭建成功，登陆 域名/wp-login.php 管理网站</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614151802.jpg" alt="wordpress安装成功"></p><p>至此我们的Wordpress网站已经搭建完成，如果是搭建来玩玩的话，学习一下的话，这样已经完全足够了</p><p>但是如果你做一个优秀的网站，并长期坚持下去，则还需要进一步优化，下面的内容就教大家一些基础的优化，比如<strong>配置https、固定链接、伪静态设置</strong>等，在真实的环境下这些基本都是必备的</p><h2 id="WordPress优化"><a href="#WordPress优化" class="headerlink" title="WordPress优化"></a>WordPress优化</h2><p>WordPress部署好之后，我们就可以针对网站做一些列的优化措施了</p><h3 id="配置https"><a href="#配置https" class="headerlink" title="配置https"></a>配置https</h3><p>近些年来，Chrome等浏览器一直在推动https网站，所有的http协议网站被标记为不安全，而在今年的7月份开始，<a href="https://security.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html" target="_blank" rel="noopener">Chrome将对非https网站进一步加入明显的非安全标记</a>，如果这时再不对网站进行https改造的话，那么可能会对信任度造成一定的影响，所以说对一个面向用户的网站来说，开启https是非常有必要的</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614162154.jpg" alt="谷歌浏览器将提示非https网站为不安全"></p><p>宝塔面板开启https也非常简单，它将letsencrypt的免费https证书整合到自己的功能，使原本繁琐专业的技术变得非常简单，只需要点击一下按钮，网站就能开启全站https</p><p>进入宝塔后台 – 网站 – 设置，进入特定网站的设置界面</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614163013-800x194.jpg" alt="宝塔面板网站设置"></p><p>我们看到有一个叫做SSL的功能，这个就是添加https证书的功能</p><p>选择 Let’s Encrypt，输入自己的邮箱，并在2个域名前边打钩，确认没问题后点击申请</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614163416.jpg" alt="宝塔面板为wordpress申请免费https证书"></p><p>申请之后会自动运行脚本，我们稍等一下就会看到开启成功，宝塔已经将KEY和PEM为我们填写完毕，而且这个比较的方便的一点是，等三个月到期后会宝塔会自动续期，完全不影响我们的网站，最后记得将强制https开启，这样即使有用户访问http网页也会自动跳转到https格式</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614163747.jpg" alt="宝塔面板设置wordpress站点强制https"></p><p>还有一点就是到Wordpress后台设置一下首页为https开头的网址</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614182916-e1552883324564.jpg" alt="wordpress后台设置https地址"></p><p>再看网址已经显示小绿锁了，https开启成功</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614164100.jpg" alt="wordpress开启https成功"></p><h3 id="设置固定链接"><a href="#设置固定链接" class="headerlink" title="设置固定链接"></a>设置固定链接</h3><p>除了https外，另外一项非常重要的就是URL的格式，默认的URL是非常复杂且对搜索引擎不友好的，我们必须在搜索引擎抓取之前将URL设置成一种简单的、SEO友好的格式(后期修改将会对排名产生很大影响)</p><p>而且有些插件和功能都会依赖固定链接，默认的链接格式可能不适配，所以说设定固定链接是非常必要的</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614164244.jpg" alt="wordpress默认链接样式"></p><p>登陆到Wordpress后台 – 设置 – 固定链接，选择一个自己想要的格式，除了朴素类型，其他的都是可以使用的，如果你比较擅长SEO的话，自定义结构会非常有用，关于WordPress固定链接的详细介绍，可以查看<a href="https://themeforwp.net/archives/wordpress-permalink-settings/" target="_blank" rel="noopener">这篇教程</a></p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614164752.jpg" alt="wordpress设置固定链接"></p><p>比如我选择一个数字型，再次访问就会出现如下的URL格式，简单、明了，但是尝试的朋友可能会发现会和我一样页面不显示，这时候不用着急，是因为我们还没有配置伪静态的缘故</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614165021.jpg" alt="wordpress设置固定链接后错误"></p><p>回到宝塔面板的网站设置选项中，选择伪静态，我们将下面一段代码填入并保存</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">if (-f $request_filename/index.html)&#123;</span><br><span class="line">rewrite (.*) $1/index.html break;</span><br><span class="line">&#125;</span><br><span class="line">if (-f $request_filename/index.php)&#123;</span><br><span class="line">rewrite (.*) $1/index.php;</span><br><span class="line">&#125;</span><br><span class="line">if (!-f $request_filename)&#123;</span><br><span class="line">rewrite (.*) /index.php;</span><br><span class="line">&#125;</span><br><span class="line">rewrite /wp-admin$ $scheme://$host$uri/ permanent;</span><br></pre></td></tr></table></figure><p>更新：还有一种方法就是代码框的上方有一个选择栏，如下图，可以把当前改为 WordPress，宝塔面板会自动为你填充伪静态代码</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614165314.jpg" alt="设置wordpress为伪静态"></p><p>再次访问页面，成功显示</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180614165418.jpg" alt="wordpress伪静态开启成功"></p><h3 id="删除宝塔404页面，使用WordPress自带404页面"><a href="#删除宝塔404页面，使用WordPress自带404页面" class="headerlink" title="删除宝塔404页面，使用WordPress自带404页面"></a>删除宝塔404页面，使用WordPress自带404页面</h3><p>大部分Wordpress主题是自带404页面的，我们最好使用主题适配的404页面，不要使用宝塔自带的404网页，修改方法：</p><p>修改网站配置文件，在 error_page 404 /404.html; 前边加上 # 注释掉</p><p><img src="/2020/02/03/阿里云主机+宝塔Linux从零建站/20180802044838.jpg" alt="设置Wordpress404页面"></p><h3 id="其他wordpress优化建议"><a href="#其他wordpress优化建议" class="headerlink" title="其他wordpress优化建议"></a>其他wordpress优化建议</h3><p>以上步骤之后，基本wordpress搭建和一些必备的设置就算完成了，剩下的更多是个人的选择，每个人可能要求不同，下面就说几点wordpress优化的建议</p><ul><li>无论你是做谷歌seo还是百度seo，安装一个SEO插件，就算不想设置文章的TDK，至少网站首页的有必要设置一下，推荐 <a href="https://themeforwp.net/archives/all-in-one-seo-pack/" target="_blank" rel="noopener">All in one seo pack</a></li><li>定期备份，备份的重要性不用多说，凡是丢过数据的人都会养成备份的习惯，<a href="https://themeforwp.net/archives/wordpress-backup-method/" target="_blank" rel="noopener">WordPress备份网站方法</a></li><li>安装一个安全插件，<a href="https://themeforwp.net/archives/best-wordpress-security-plugins/" target="_blank" rel="noopener">WordPress安全插件推荐</a></li><li>及时更新网站的主题和插件，<a href="https://themeforwp.net/archives/wordpress-plugin-automatic-update/" target="_blank" rel="noopener">WordPress插件自动更新方法</a></li><li>删除所有没有用的主题和插件，<a href="https://themeforwp.net/archives/delete-themes/" target="_blank" rel="noopener">WordPress删除主题方法</a></li><li>设置垃圾留言过滤，<a href="https://themeforwp.net/archives/the-best-wordpress-anti-spam-plugin-akismet/" target="_blank" rel="noopener">wordpress防垃圾留言插件Akismet</a></li></ul><p>参考文章：</p><ul><li><a href="https://themeforwp.net/wp-content/uploads/2018/06/20180613225752.webp" target="_blank" rel="noopener">https://themeforwp.net/wp-content/uploads/2018/06/20180613225752.webp</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;如何安装宝塔以及用wordpress建站&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://love-h.github.io/tags/Linux/"/>
+    
+      <category term="宝塔" scheme="https://love-h.github.io/tags/%E5%AE%9D%E5%A1%94/"/>
+    
+      <category term="阿里云主机" scheme="https://love-h.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91%E4%B8%BB%E6%9C%BA/"/>
+    
+      <category term="建站" scheme="https://love-h.github.io/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宝塔Linux下FTP无法连接</title>
+    <link href="https://love-h.github.io/2020/02/03/%E5%AE%9D%E5%A1%94Linux%E4%B8%8BFTP%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5/"/>
+    <id>https://love-h.github.io/2020/02/03/宝塔Linux下FTP无法连接/</id>
+    <published>2020-02-03T11:48:34.000Z</published>
+    <updated>2020-02-18T04:41:28.615Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"></blockquote><a id="more"></a><blockquote class="blockquote-center"></blockquote><!-- more --><blockquote><p>再三声明，以下信息源自：<a href="https://blog.csdn.net/qq_39240270/article/details/93531345，本人仅对其备份留以自用" target="_blank" rel="noopener">https://blog.csdn.net/qq_39240270/article/details/93531345，本人仅对其备份留以自用</a></p></blockquote><h1 id="宝塔Linux面板FTP无法连接的解决办法"><a href="#宝塔Linux面板FTP无法连接的解决办法" class="headerlink" title="宝塔Linux面板FTP无法连接的解决办法"></a>宝塔Linux面板FTP无法连接的解决办法</h1><p>原创<a href="https://me.csdn.net/hc1104" target="_blank" rel="noopener">止境</a> 最后发布于2018-05-22 10:20:18 阅读数 35119 收藏<br><a href="https://blog.csdn.net/home/help.html#level" target="_blank" rel="noopener"> </a>原创 54  粉丝 11  获赞 5  评论 11  访问 10万+ </p><p>展开</p><p>如果使用的是阿里云服务器，需要在安全组设置中，对22、21端口放行，并且被动端口（39000 - 40000）也需要处于放行状态</p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/2018052210054419.png" alt="img"></p><p>宝塔Linux面板在使用sftp用最高权限连接时一切正常，但是使用在宝塔里面创建的ftp的账号密码，就无法登陆，相信大家遇到过这样的问题。遇到这样的问题，需要修改一些配置。</p><p>第一步：进入宝塔Linux面板中的软件管理，找到Pure-Ftpd 1.0.47点设置</p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/20180522101012711.png" alt="img"></p><p>第二步：点击配置修改：如图所示，查找“ForcePassiveIP”（位置188行左右），搜索：</p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/20180522101416148.png" alt="img"></p><p>第三步：将后面的192.168.0.1 修改为你自己的阿里云服务器公网IP地址，同时，去掉ForcePassiveIP的“#”号。然后保存。</p><p>第四步：重启服务</p><p>第五步：进入xftp中设置相关信息，输入创建的ftp账号密码（不是root的），使用的协议不是sftp，而是ftp，端口是21，<strong>注意在选项里面，将传输类型勾选使用被动模式。</strong></p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/20180522101720875.png" alt="img"></p><p>最后，连接成功。</p><p>参考文章:</p><ul><li><a href="https://blog.csdn.net/qq_39240270/article/details/93531345" target="_blank" rel="noopener">https://blog.csdn.net/qq_39240270/article/details/93531345</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://love-h.github.io/tags/Linux/"/>
+    
+      <category term="宝塔" scheme="https://love-h.github.io/tags/%E5%AE%9D%E5%A1%94/"/>
+    
+      <category term="FTP" scheme="https://love-h.github.io/tags/FTP/"/>
     
   </entry>
   
@@ -126,28 +204,6 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://love-h.github.io/2020/02/02/Hello-World/"/>
-    <id>https://love-h.github.io/2020/02/02/Hello-World/</id>
-    <published>2020-02-02T09:59:02.529Z</published>
-    <updated>2019-06-01T22:10:09.816Z</updated>
-    
-    <content type="html"><![CDATA[<p>程序员博客的第一句当然是Hello World 啦！</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello,World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;程序员博客的第一句当然是Hello World 啦！&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span cla
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>电脑连不上网络</title>
     <link href="https://love-h.github.io/2020/01/30/%E7%94%B5%E8%84%91%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%BD%91%E7%BB%9C/"/>
     <id>https://love-h.github.io/2020/01/30/电脑连不上网络/</id>
@@ -198,9 +254,9 @@
     <link href="https://love-h.github.io/2019/12/13/UDP%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%88%86%E7%89%87/"/>
     <id>https://love-h.github.io/2019/12/13/UDP数据报分片/</id>
     <published>2019-12-13T08:48:34.000Z</published>
-    <updated>2020-02-02T11:43:25.573Z</updated>
+    <updated>2020-02-18T03:49:02.311Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>UDP数据报分片</p></blockquote><a id="more"></a><h4 id="一个UDP用户数据报的数据字段为8192字节。要使用以太网来传送。试问应当划分为几个数据报片？说明每一个数据报片的数据字段长度和片偏移字段的值"><a href="#一个UDP用户数据报的数据字段为8192字节。要使用以太网来传送。试问应当划分为几个数据报片？说明每一个数据报片的数据字段长度和片偏移字段的值" class="headerlink" title="一个UDP用户数据报的数据字段为8192字节。要使用以太网来传送。试问应当划分为几个数据报片？说明每一个数据报片的数据字段长度和片偏移字段的值"></a>一个UDP用户数据报的数据字段为8192字节。要使用以太网来传送。试问应当划分为几个数据报片？说明每一个数据报片的数据字段长度和片偏移字段的值</h4><ul><li><p>首先， 每个分片都有 <code>IP首部</code></p></li><li><p>其次，每个分片都有<code>UDP数据报</code></p></li></ul><p>可能有人会问，那UDP首部呢？敲黑板，划重点啦！</p><ul><li>但是，UDP首部只会被划分的第一个分片里</li></ul><p>下图是《tcp/ip协议详解-卷一》里的说明 </p><p><img src="/2019/12/13/UDP数据报分片/1578329013326.png" alt="1578329013326"></p><p>如上图，我们以1473字节的用户数据为例(MTU，默认最大传输单元，1500字节)</p><p>第一分片：<code>MTU - IP首部 = UDP首部 + UDP数据</code>，即 1500 - 20 = 8 + 1472</p><p>第二分片：1473 - 1</p><p><img src="/2019/12/13/UDP数据报分片/P00107-003604.jpg" alt="P00107-003604" style="zoom:10%;"></p><p>回归原题：</p><p>第一个数据片包含ip首部20+udp首部8+1472udp数据<br>剩下的都是包含ip首部20+1480udp数据<br>最后一个就是8192-（1472-1480*4）=800 </p>]]></content>
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>UDP数据报分片</p></blockquote><a id="more"></a><h4 id="一个UDP用户数据报的数据字段为8192字节。要使用以太网来传送。试问应当划分为几个数据报片？说明每一个数据报片的数据字段长度和片偏移字段的值"><a href="#一个UDP用户数据报的数据字段为8192字节。要使用以太网来传送。试问应当划分为几个数据报片？说明每一个数据报片的数据字段长度和片偏移字段的值" class="headerlink" title="一个UDP用户数据报的数据字段为8192字节。要使用以太网来传送。试问应当划分为几个数据报片？说明每一个数据报片的数据字段长度和片偏移字段的值"></a>一个UDP用户数据报的数据字段为8192字节。要使用以太网来传送。试问应当划分为几个数据报片？说明每一个数据报片的数据字段长度和片偏移字段的值</h4><ul><li><p>首先， 每个分片都有 <code>IP首部</code></p></li><li><p>其次，每个分片都有<code>UDP数据报</code></p></li></ul><p>可能有人会问，那UDP首部呢？敲黑板，划重点啦！</p><ul><li>但是，UDP首部只会被划分的第一个分片里</li></ul><p>下图是《tcp/ip协议详解-卷一》里的说明 </p><p><img src="/2019/12/13/UDP数据报分片/1578329013326.png" alt="1578329013326"></p><p>如上图，我们以1473字节的用户数据为例(MTU，默认最大传输单元，1500字节)</p><p>第一分片：<code>MTU - IP首部 = UDP首部 + UDP数据</code>，即 1500 - 20 = 8 + 1472</p><p>第二分片：1473 - 1</p><p><img src="/2019/12/13/UDP数据报分片/P00107-003604.jpg" alt="P00107-003604" style="zoom:100%;"></p><p>回归原题：</p><p>第一个数据片包含ip首部20+udp首部8+1472udp数据<br>剩下的都是包含ip首部20+1480udp数据<br>最后一个就是8192-（1472-1480*4）=800 </p>]]></content>
     
     <summary type="html">
     
@@ -355,9 +411,9 @@
     <link href="https://love-h.github.io/2019/10/05/%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E6%96%B0%E5%BB%BAmd%E6%96%87%E4%BB%B6/"/>
     <id>https://love-h.github.io/2019/10/05/右键菜单新建md文件/</id>
     <published>2019-10-04T16:01:34.000Z</published>
-    <updated>2020-01-07T09:01:13.429Z</updated>
+    <updated>2020-02-07T08:00:46.558Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>新建md文件并自定义模板</p></blockquote><a id="more"></a><h4 id="右键菜单新建md文件"><a href="#右键菜单新建md文件" class="headerlink" title="右键菜单新建md文件"></a>右键菜单新建md文件</h4><h5 id="效果图："><a href="#效果图：" class="headerlink" title="效果图："></a>效果图：</h5><p><img src="/2019/10/05/右键菜单新建md文件/1570210456863.png" alt="1570210456863"></p><h5 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h5><ul><li>打开<code>运行</code>，输入<code>regedit</code></li></ul><p><img src="/2019/10/05/右键菜单新建md文件/1570205571014.png" alt="1570205571014"></p><ul><li>打开<code>计算机\HKEY_CLASSES_ROOT\.md\ShellNew</code></li></ul><p><img src="/2019/10/05/右键菜单新建md文件/1570205679143.png" alt="1570205679143"></p><ul><li><p>右键<code>ShellNew</code>，新建字符串值，<code>NullFile</code></p><p><img src="/2019/10/05/右键菜单新建md文件/1570205900666.png" alt="1570205900666"></p></li></ul><hr><h4 id="给新建md文件自定义模板"><a href="#给新建md文件自定义模板" class="headerlink" title="给新建md文件自定义模板"></a>给新建md文件自定义模板</h4><h5 id="效果图：-1"><a href="#效果图：-1" class="headerlink" title="效果图："></a>效果图：</h5><p><img src="/2019/10/05/右键菜单新建md文件/1570210562422.png" alt="1570210562422"></p><h5 id="实现方法："><a href="#实现方法：" class="headerlink" title="实现方法："></a>实现方法：</h5><ul><li>右键<code>ShellNew</code>，新建项，<code>FileName</code> ，填入数值<code>hexo.md</code>(随意一个你想要的模板文档)</li></ul><p><img src="/2019/10/05/右键菜单新建md文件/1570205921150.png" alt="1570205921150"></p><ul><li>打开<code>C:\Windows\SHELLNEW</code>，新建<code>hexo.md</code>，写入所需内容</li></ul><p><img src="/2019/10/05/右键菜单新建md文件/1570205483545.png" alt="1570205483545"></p><p><img src="/2019/10/05/右键菜单新建md文件/1570205950799.png" alt="1570205950799"></p>]]></content>
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>新建md文件并自定义模板</p></blockquote><a id="more"></a><h4 id="右键菜单新建md文件"><a href="#右键菜单新建md文件" class="headerlink" title="右键菜单新建md文件"></a>右键菜单新建md文件</h4><h5 id="效果图："><a href="#效果图：" class="headerlink" title="效果图："></a>效果图：</h5><p><img src="/2019/10/05/右键菜单新建md文件/1570210456863.png" alt="1570210456863"></p><h5 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h5><ul><li>打开<code>运行</code>，输入<code>regedit</code></li></ul><p><img src="/2019/10/05/右键菜单新建md文件/1570205571014.png" alt="1570205571014"></p><ul><li>打开<code>计算机\HKEY_CLASSES_ROOT</code>右键查找，输入<code>Typora</code></li></ul><p><img src="/2019/10/05/右键菜单新建md文件/image-20200207155044158.png" alt="image-20200207155044158"></p><ul><li>确认是否有该程序可运行</li></ul><p><img src="/2019/10/05/右键菜单新建md文件/image-20200207155226305.png" alt="image-20200207155226305"></p><p>如果使用的是其他markdown编辑器，同理</p><ul><li>新建<code>.reg</code>文件，输入以下内容</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=&quot;Typora.exe&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;NullFile&quot;=&quot;&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=&quot;Markdown&quot;</span><br></pre></td></tr></table></figure><p><code>@=&quot;Typora.exe&quot;</code> 代表的是指定.md文件的运行程序</p><p><code>@=&quot;Markdown&quot;</code> 代表的是右键时默认的文件名字，这样写新建为<code>新建Markdown.md</code>文件，而且右键菜单中显示<code>MarkDown</code></p><p>编辑好之后,双击运行，结果如图所示:</p><p><img src="/2019/10/05/右键菜单新建md文件/image-20200207155815542.png" alt="image-20200207155815542"></p><p><img src="/2019/10/05/右键菜单新建md文件/image-20200207155829660.png" alt="image-20200207155829660"></p><hr><h4 id="给新建md文件自定义模板"><a href="#给新建md文件自定义模板" class="headerlink" title="给新建md文件自定义模板"></a>给新建md文件自定义模板</h4><h5 id="效果图：-1"><a href="#效果图：-1" class="headerlink" title="效果图："></a>效果图：</h5><p><img src="/2019/10/05/右键菜单新建md文件/1570210562422.png" alt="1570210562422"></p><h5 id="实现方法："><a href="#实现方法：" class="headerlink" title="实现方法："></a>实现方法：</h5><ul><li>右键<code>ShellNew</code>，新建项，<code>FileName</code> ，填入数值<code>hexo.md</code>(随意一个你想要的模板文档)</li></ul><p><img src="/2019/10/05/右键菜单新建md文件/1570205921150.png" alt="1570205921150"></p><ul><li>打开<code>C:\Windows\SHELLNEW</code>(若没有则新建)，新建<code>hexo.md</code>，写入所需内容</li></ul><p><img src="/2019/10/05/右键菜单新建md文件/1570205483545.png" alt="1570205483545"></p><p><img src="/2019/10/05/右键菜单新建md文件/1570205950799.png" alt="1570205950799"></p><h4 id="编辑新建图标-非必须"><a href="#编辑新建图标-非必须" class="headerlink" title="编辑新建图标(非必须)"></a>编辑新建图标(非必须)</h4><ol><li>以<code>Typora</code>为例,在注册表<code>Typora.exe</code>下点击项<code>DefaultIcon</code>,右键修改</li><li>将属性修改为想要设置的Markdown文件图标</li></ol><p><a href="https://stepneverstop.github.io/win-rightclick-create-md/20181229105300.png" target="_blank" rel="noopener"><img src="/2019/10/05/右键菜单新建md文件/20181229105300.png" alt="img"></a></p>]]></content>
     
     <summary type="html">
     
@@ -422,52 +478,6 @@
       <category term="hexo" scheme="https://love-h.github.io/tags/hexo/"/>
     
       <category term="Github图床" scheme="https://love-h.github.io/tags/Github%E5%9B%BE%E5%BA%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo图片完美上传</title>
-    <link href="https://love-h.github.io/2019/10/03/hexo%E5%9B%BE%E7%89%87%E5%AE%8C%E7%BE%8E%E4%B8%8A%E4%BC%A0/"/>
-    <id>https://love-h.github.io/2019/10/03/hexo图片完美上传/</id>
-    <published>2019-10-03T08:48:34.000Z</published>
-    <updated>2019-10-03T14:04:41.951Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>hexo搭建简易版GIthub图床</p></blockquote><a id="more"></a><blockquote><p>今天翻看以前文章的图片大多显示不出来，查了下，发现好像是之前 <strong>掘金、博客园、51、CSDN、简书</strong>各大网站对上传图片的引用做了调整，导致以前放在上述网站的图片无法引用(尴尬，被大伙们发现俺用他们当图床了，啊哈哈)，所以今天花了些时间，用GitHub搭建简易版图床</p></blockquote><h4 id="Hexo配置文件的设置"><a href="#Hexo配置文件的设置" class="headerlink" title="Hexo配置文件的设置"></a>Hexo配置文件的设置</h4><p>确保你的Hexo的配置文件_config.yml里面有个这个选项配置，并将其置为true</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure><p><img src="/2019/10/03/hexo图片完美上传/1570094151429.png" alt="1570094151429"></p><p>这个功能实际上是Hexo官方文档中提到的资源文件夹功能，它的作用在于当你使用<code>hexo new</code>生成一篇新文章时，会在<code>\source\_posts</code></p><p>目录下生成一个 文章名.md 文件外，附带生成一个与 文章名 同名的文件夹，可以用它来存放这篇文章的所有资源，比如图片，附件等</p><p><img src="/2019/10/03/hexo图片完美上传/1570109507157.png" alt="1570109507157"></p><h4 id="安装hexo-asset-image插件"><a href="#安装hexo-asset-image插件" class="headerlink" title="安装hexo-asset-image插件"></a>安装<code>hexo-asset-image</code>插件</h4><p><strong>hexo-asset-image</strong> 一个图片路径转换的插件，我目前安装的是最新的1.00版本，使用如下命令安装插件</p><p><code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code></p><p>插件安装完以后，实际上是存放在下面的目录文件夹下</p><p><code>\blog\node_modules\hexo-asset-image</code></p><h4 id="安装Typora并修改其图片插入路径"><a href="#安装Typora并修改其图片插入路径" class="headerlink" title="安装Typora并修改其图片插入路径"></a>安装Typora并修改其图片插入路径</h4><ul><li><p>安装方法可看本人写的<a href="https://love-h.github.io/2019/02/26/Typora设置一/">Typora设置</a></p></li><li><p>修改图片插入路径</p></li></ul><p><img src="/2019/10/03/hexo图片完美上传/1570110171170.png" alt="1570110171170"></p><p>点击 复制到指定路径，填入<code>./{filename}</code>，勾选如图选项</p><p><img src="/2019/10/03/hexo图片完美上传/1570110210756.png" alt="1570110210756"></p><p>随便插入张图片测试，如下</p><p><img src="/2019/10/03/hexo图片完美上传/1570110321667.png" alt="1570110321667"></p><p>会自动复制到与文章名同名的文件夹内</p><p><img src="/2019/10/03/hexo图片完美上传/1570110402072.png" alt="1570110402072"></p><p><strong>至此，Over！</strong></p><h4 id="安装时的问题"><a href="#安装时的问题" class="headerlink" title="安装时的问题"></a>安装时的问题</h4><blockquote><p>写完文章，上传到GitHub后，发现图片依旧显示不出，查看某张图片路径，发现其为<code>./io//1570092541199.png</code>，如下</p></blockquote><p><img src="/2019/10/03/hexo图片完美上传/1570097539517.png" alt="1570097539517"></p><p>到该插件GitHub上逛了下，发现是因为我的域名为io，所以会有该问题</p><p><img src="/2019/10/03/hexo图片完美上传/1570097237112.png" alt="1570097237112"></p><h5 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h5><ul><li>打开 <code>index.js</code></li></ul><p><img src="/2019/10/03/hexo图片完美上传/1570109769249.png" alt="1570109769249"></p><ul><li>修改第24行代码，<code>var endPos = link.length - 1</code></li></ul><p><img src="/2019/10/03/hexo图片完美上传/1570097599635.png" alt="1570097599635"></p><p><img src="/2019/10/03/hexo图片完美上传/1570097633776.png" alt="1570097633776"></p><ul><li>重新上传文章，结果如图</li></ul><p><img src="/2019/10/03/hexo图片完美上传/1570097566868.png" alt="1570097566868"></p><blockquote><p>弄了快两小时，主要还是自己太菜鸡，遇到问题宁愿先Google，也不愿去看看官方文档，需要谨记此次经历！</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;hexo搭建简易版GIthub图床&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="https://love-h.github.io/tags/hexo/"/>
-    
-      <category term="Github图床" scheme="https://love-h.github.io/tags/Github%E5%9B%BE%E5%BA%8A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>error setting certificate verify locations</title>
-    <link href="https://love-h.github.io/2019/10/03/error%20setting%20certificate%20verify%20locations/"/>
-    <id>https://love-h.github.io/2019/10/03/error setting certificate verify locations/</id>
-    <published>2019-10-03T07:47:32.000Z</published>
-    <updated>2019-10-03T10:08:02.049Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>hexo博客上传错误</p></blockquote><a id="more"></a><blockquote><p>今个像往常般上传hexo博客文件时，突然报错，问题有二</p></blockquote><h3 id="一、-git-检查换行格式报错"><a href="#一、-git-检查换行格式报错" class="headerlink" title="一、 git 检查换行格式报错"></a>一、 git 检查换行格式报错</h3><h4 id="问题如图"><a href="#问题如图" class="headerlink" title="问题如图"></a>问题如图</h4><p><img src="/2019/10/03/error setting certificate verify locations/1570089191835.png" alt="1570089191835"></p><h4 id="原因-："><a href="#原因-：" class="headerlink" title="原因 ："></a>原因 ：</h4><p>git 在 Windows下默认是CRLF作为换行符，git add 提交时，检查文本中有LF 换行符（linux系统里面的），则会告警。所以问题的解决很简单，让git忽略该检查即可</p><h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p><code>git config --global core.autocrlf false</code></p><h3 id="二-ca-bundle-crt-文件路径不对"><a href="#二-ca-bundle-crt-文件路径不对" class="headerlink" title="二 ca-bundle.crt 文件路径不对"></a>二 <code>ca-bundle.crt</code> 文件路径不对</h3><p>Error: fatal: unable to access <a href="https://github.com/xxx/xxx.github.io.git" target="_blank" rel="noopener">https://github.com/xxx/xxx.github.io.git</a>: error setting certificate verify locations:<br>  CAfile: D:/Programming Tools/Git/mingw64/ssl/certs/ca-bundle.crt<br>  CApath: none</p><h4 id="问题如图-1"><a href="#问题如图-1" class="headerlink" title="问题如图"></a>问题如图</h4><p><img src="/2019/10/03/error setting certificate verify locations/1570089425542.png" alt="1570089425542"></p><h4 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h4><blockquote><p>前段时间修改了D盘里的<code>Programming Tools</code>文件夹的名字，将其空格去掉，即<code>ProgrammingTools</code>，因为<code>Git</code>也安装在该文件夹里，故导致Git的 <code>ca-bundle.crt</code> 文件路径发生了错误</p></blockquote><h4 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h4><p><code>git config --system http.sslacinfo &quot;D:/Programming Tools/Git/mingw64/ssl/certs/ca-bundle.crt</code></p><p><strong>其中”D:/xxx”需换成自己<code>ca-bundle.crt</code>的路径</strong></p><p><strong>一定要用反斜杠<code>/</code>，不能用<code>\</code></strong></p><p><img src="/2019/10/03/error setting certificate verify locations/1570092132103.png" alt="1570092132103"></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;hexo博客上传错误&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="https://love-h.github.io/tags/hexo/"/>
-    
-      <category term="git" scheme="https://love-h.github.io/tags/git/"/>
     
   </entry>
   

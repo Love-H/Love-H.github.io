@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo博客备份]]></title>
+    <url>%2F2020%2F02%2F03%2Fhexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%2F</url>
+    <content type="text"><![CDATA[hexo博客备份 安装Node.js环境 下载地址：https://nodejs.org/en/ 一路点next，不要怂 查看是否安装成功：打开 cmd 命令行(win+r 输入 cmd 回车)执行 ： 12node -vnpm -v Git 安装Git 下载地址：http://www.git-scm.com/download/ 同上，一路点next 验证是否成功安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！ 初始化仓库，并绑定 1git init 1git remote add origin xxx(仓库地址) Hexo 安装hexo 1npm install -g hexo-cli Final切记博客上传命令为 hexo clean &amp;&amp; hexo g &amp;&amp; hexo d]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客备份</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[git安装]]></title>
     <url>%2F2020%2F02%2F03%2Fgit%E5%AE%89%E8%A3%85%2F</url>
     <content type="text"><![CDATA[git安装 使用vim编辑器 许可协议: 署名-非商业性使用-禁止演绎 4.0 国际 转载请保留原文链接及]]></content>
@@ -9,12 +18,35 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[hexo博客备份]]></title>
-    <url>%2F2020%2F02%2F03%2Fhexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%2F</url>
-    <content type="text"><![CDATA[hexo博客备份 安装Node.js环境 下载地址：https://nodejs.org/en/ 一路点next，不要怂 查看是否安装成功：打开 cmd 命令行(win+r 输入 cmd 回车)执行 ： 12node -vnpm -v Git 安装Git 下载地址：http://www.git-scm.com/download/ 同上，一路点next 验证是否成功安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！ 初始化仓库，并绑定 1git init 1git remote add origin xxx(仓库地址) Hexo 安装hexo 1npm install -g hexo-cli Final切记博客上传命令为 hexo clean &amp;&amp; hexo g &amp;&amp; hexo d]]></content>
+    <title><![CDATA[阿里云主机+宝塔Linux从零建站(二)]]></title>
+    <url>%2F2020%2F02%2F03%2F%E9%98%BF%E9%87%8C%E4%BA%91%E4%B8%BB%E6%9C%BA%2B%E5%AE%9D%E5%A1%94Linux%E4%BB%8E%E9%9B%B6%E5%BB%BA%E7%AB%99(%E4%BA%8C)%2F</url>
+    <content type="text"><![CDATA[如何安装宝塔以及用wordpress建站 123]]></content>
       <tags>
-        <tag>hexo</tag>
-        <tag>博客备份</tag>
+        <tag>Linux</tag>
+        <tag>宝塔</tag>
+        <tag>阿里云主机</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[阿里云主机+宝塔Linux从零建站(一)]]></title>
+    <url>%2F2020%2F02%2F03%2F%E9%98%BF%E9%87%8C%E4%BA%91%E4%B8%BB%E6%9C%BA%2B%E5%AE%9D%E5%A1%94Linux%E4%BB%8E%E9%9B%B6%E5%BB%BA%E7%AB%99%2F</url>
+    <content type="text"><![CDATA[如何安装宝塔以及用wordpress建站 安装宝塔安装putty 由于Windows是不能直接连接到Linux服务器的，需要一个SSH的软件，推荐使用putty作为远程连接软件，它是开源免费使用的 软件安装过程这里就不再多说了，没有什么需要注意的 连接到服务器安装好了putty软件之后，就可以开始连接到服务器了，提前准备好服务器的IP、账号、密码 填写服务器ip，并点击open 输入服务器名称和密码(ps:为了安全，此处密码不会显示出来，故输入完回车即可) 出现如图所示，则登陆成功 安装宝塔面板 再三声明，以下信息源自：https://themeforwp.net/wp-content/uploads/2018/06/20180613225752.webp，本人仅对其备份留以自用 输入下面的命令并执行(最新宝塔面板需要在centos7系统用，其他系统的命令查看这里) yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; bash install.sh 安装中途会脚本询问是否将网站安装在www目录，直接选择y，然后确认即可，大概会需要几分钟的时间 最后得到了宝塔面板的登陆信息，将这些保存下来 更新：宝塔面板为了提升安全，已将面板路径在之前的8888端口增加了随机入口，所以最好将登录信息长期保存，以后面板的管理都需要用到这些信息 安装网站环境使用刚刚获得到的信息，浏览器访问你的后台，登陆宝塔面板(地址一般为http://ip:8888/随机字符串，账号密码也就是刚刚安装完显示的，这里一定要将这些登陆信息保存好) 注意：如果使用的是阿里云之类的云服务器提前开放安全端口，包括8888、80、443等 首次登陆宝塔面板后台，会弹出一键安装环境，在这里我们需要耐心设置一遍 仔细看下图中的设置，安装环境主要有3个点 选择LNMP环境，节省资源 调整Mysql和PHP版本 安装方式选择为编译安装 最好是按照上图的配置安装，可能有朋友会问为什么不选择 PHP7.2，这里主要是考虑到各种主题和插件的最大兼容，如果选择PHP7.2的话可能会有一些奇怪的问题，当然如果后期主题和插件都兼容了也可以切换到7.2。还有一点就是如果服务器为512M内存要选择Mysql5.5，不然压力会很大 LNMP环境编译安装过程大概为半小时左右，视服务器性能而定 搭建Wordpress网站当服务器LNMP环境安装完成之后，我们就可以开始着手搭建Wordpress网站了，这里就是建站的主要步骤，用过虚拟主机的朋友应当非常熟悉 新建站点选择网站 – 添加站点，首先填入自己的域名，一般是 domain.com 和 www.domain.com 两种格式都要绑定，并创建FTP和数据库 创建完成后会在网站列表中显示，这里面的密码记不记无所谓，可以随时查看，后期还要通过这里进行网站管理 域名解析服务器已经绑定了域名，接下来就是添加解析了，其实就是添加2条A记录，非常简单，这里我用的是腾讯云域名，其他的服务商可能稍微有些不同 登陆控制台，选择域名注册 – 找到自己的域名 – 解析 和服务器绑定一致，域名也是添加2条记录，一个是www对应 www.domain.com，另一个是@，对应domain.com，全部解析到服务器的ip地址 解析完成后访问域名，如果显示 恭喜, 站点创建成功，就证明解析完成，可以进入下一步的网站搭建了，如果还不能访问，稍等几分钟再尝试 注意，有些国外域名解析的话生效较慢，需要等待一天左右时间 下载Wordpress安装包因为需要到wordpress官网下载程序，就采用的是宝塔的远程下载功能，先教大家如何使用 我们进入宝塔后台 – 文件，可以看到这就是服务器的文件系统，默认的/www目录就是所有网站的目录，可以看到刚刚我们创建的网站 wpwp.xyz，我们点击就能就入网站里面 可以看到网站下还很空，可以先把2个没用的 index.html 和 404.html 删除 在文件的上方，我们可以看到在上传的右边有一个远程下载的按钮，点击会弹出一个对话框 这里我们就填入wordpress最新版的下载地址，确定之后就会下载到当前的目录 等待一会下载完成后，点击一下刷新按钮，就能看到Wordpress程序的压缩包 选择右键 – 解压，直接确定 解压完成后网站根目录会多出一个wordpress的文件夹 但这样不能直接使用的，我们还要继续将wordpress文件夹内的所有文件移动到网站的根目录 选中所有文件，然后剪切，然后到网站根目录粘贴所有 最后的目录结构如下图就行了 WordPress安装环境和程序都就绪了，接下来就可以开始安装Wordpress网站了 访问 www.domain.com，进入程序安装界面，第一步选择 现在就开始 进入到数据库配置界面，因为我们之前新建网站时已经创建了对应网站的数据库，直接填写信息就行，具体的参数可以到宝塔后台 – 数据库查看详细 出现如下的提示，证明数据库信息没有问题 接下来是配置网站的基本信息，为了安全用户名最好不要使用admin，如果只是网站的测试阶段，要勾选禁止搜索引擎，网站搭建完毕后再开放抓取 WordPress网站搭建成功，登陆 域名/wp-login.php 管理网站 至此我们的Wordpress网站已经搭建完成，如果是搭建来玩玩的话，学习一下的话，这样已经完全足够了 但是如果你做一个优秀的网站，并长期坚持下去，则还需要进一步优化，下面的内容就教大家一些基础的优化，比如配置https、固定链接、伪静态设置等，在真实的环境下这些基本都是必备的 WordPress优化WordPress部署好之后，我们就可以针对网站做一些列的优化措施了 配置https近些年来，Chrome等浏览器一直在推动https网站，所有的http协议网站被标记为不安全，而在今年的7月份开始，Chrome将对非https网站进一步加入明显的非安全标记，如果这时再不对网站进行https改造的话，那么可能会对信任度造成一定的影响，所以说对一个面向用户的网站来说，开启https是非常有必要的 宝塔面板开启https也非常简单，它将letsencrypt的免费https证书整合到自己的功能，使原本繁琐专业的技术变得非常简单，只需要点击一下按钮，网站就能开启全站https 进入宝塔后台 – 网站 – 设置，进入特定网站的设置界面 我们看到有一个叫做SSL的功能，这个就是添加https证书的功能 选择 Let’s Encrypt，输入自己的邮箱，并在2个域名前边打钩，确认没问题后点击申请 申请之后会自动运行脚本，我们稍等一下就会看到开启成功，宝塔已经将KEY和PEM为我们填写完毕，而且这个比较的方便的一点是，等三个月到期后会宝塔会自动续期，完全不影响我们的网站，最后记得将强制https开启，这样即使有用户访问http网页也会自动跳转到https格式 还有一点就是到Wordpress后台设置一下首页为https开头的网址 再看网址已经显示小绿锁了，https开启成功 设置固定链接除了https外，另外一项非常重要的就是URL的格式，默认的URL是非常复杂且对搜索引擎不友好的，我们必须在搜索引擎抓取之前将URL设置成一种简单的、SEO友好的格式(后期修改将会对排名产生很大影响) 而且有些插件和功能都会依赖固定链接，默认的链接格式可能不适配，所以说设定固定链接是非常必要的 登陆到Wordpress后台 – 设置 – 固定链接，选择一个自己想要的格式，除了朴素类型，其他的都是可以使用的，如果你比较擅长SEO的话，自定义结构会非常有用，关于WordPress固定链接的详细介绍，可以查看这篇教程 比如我选择一个数字型，再次访问就会出现如下的URL格式，简单、明了，但是尝试的朋友可能会发现会和我一样页面不显示，这时候不用着急，是因为我们还没有配置伪静态的缘故 回到宝塔面板的网站设置选项中，选择伪静态，我们将下面一段代码填入并保存 12345678910if (-f $request_filename/index.html)&#123;rewrite (.*) $1/index.html break;&#125;if (-f $request_filename/index.php)&#123;rewrite (.*) $1/index.php;&#125;if (!-f $request_filename)&#123;rewrite (.*) /index.php;&#125;rewrite /wp-admin$ $scheme://$host$uri/ permanent; 更新：还有一种方法就是代码框的上方有一个选择栏，如下图，可以把当前改为 WordPress，宝塔面板会自动为你填充伪静态代码 再次访问页面，成功显示 删除宝塔404页面，使用WordPress自带404页面大部分Wordpress主题是自带404页面的，我们最好使用主题适配的404页面，不要使用宝塔自带的404网页，修改方法： 修改网站配置文件，在 error_page 404 /404.html; 前边加上 # 注释掉 其他wordpress优化建议以上步骤之后，基本wordpress搭建和一些必备的设置就算完成了，剩下的更多是个人的选择，每个人可能要求不同，下面就说几点wordpress优化的建议 无论你是做谷歌seo还是百度seo，安装一个SEO插件，就算不想设置文章的TDK，至少网站首页的有必要设置一下，推荐 All in one seo pack 定期备份，备份的重要性不用多说，凡是丢过数据的人都会养成备份的习惯，WordPress备份网站方法 安装一个安全插件，WordPress安全插件推荐 及时更新网站的主题和插件，WordPress插件自动更新方法 删除所有没有用的主题和插件，WordPress删除主题方法 设置垃圾留言过滤，wordpress防垃圾留言插件Akismet 参考文章： https://themeforwp.net/wp-content/uploads/2018/06/20180613225752.webp]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>宝塔</tag>
+        <tag>阿里云主机</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[宝塔Linux下FTP无法连接]]></title>
+    <url>%2F2020%2F02%2F03%2F%E5%AE%9D%E5%A1%94Linux%E4%B8%8BFTP%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%2F</url>
+    <content type="text"><![CDATA[再三声明，以下信息源自：https://blog.csdn.net/qq_39240270/article/details/93531345，本人仅对其备份留以自用 宝塔Linux面板FTP无法连接的解决办法原创止境 最后发布于2018-05-22 10:20:18 阅读数 35119 收藏 原创 54 粉丝 11 获赞 5 评论 11 访问 10万+ 展开 如果使用的是阿里云服务器，需要在安全组设置中，对22、21端口放行，并且被动端口（39000 - 40000）也需要处于放行状态 宝塔Linux面板在使用sftp用最高权限连接时一切正常，但是使用在宝塔里面创建的ftp的账号密码，就无法登陆，相信大家遇到过这样的问题。遇到这样的问题，需要修改一些配置。 第一步：进入宝塔Linux面板中的软件管理，找到Pure-Ftpd 1.0.47点设置 第二步：点击配置修改：如图所示，查找“ForcePassiveIP”（位置188行左右），搜索： 第三步：将后面的192.168.0.1 修改为你自己的阿里云服务器公网IP地址，同时，去掉ForcePassiveIP的“#”号。然后保存。 第四步：重启服务 第五步：进入xftp中设置相关信息，输入创建的ftp账号密码（不是root的），使用的协议不是sftp，而是ftp，端口是21，注意在选项里面，将传输类型勾选使用被动模式。 最后，连接成功。 参考文章: https://blog.csdn.net/qq_39240270/article/details/93531345]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>宝塔</tag>
+        <tag>FTP</tag>
       </tags>
   </entry>
   <entry>
@@ -41,11 +73,6 @@
         <tag>win10</tag>
         <tag>jdk1.8</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2020%2F02%2F02%2FHello-World%2F</url>
-    <content type="text"><![CDATA[程序员博客的第一句当然是Hello World 啦！ 12345public class Test&#123; public static void main() &#123; System.out.println("Hello,World"); &#125;&#125;]]></content>
   </entry>
   <entry>
     <title><![CDATA[电脑连不上网络]]></title>
@@ -127,7 +154,7 @@
   <entry>
     <title><![CDATA[右键菜单新建md文件]]></title>
     <url>%2F2019%2F10%2F05%2F%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E6%96%B0%E5%BB%BAmd%E6%96%87%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[新建md文件并自定义模板 右键菜单新建md文件效果图： 实现方法 打开运行，输入regedit 打开计算机\HKEY_CLASSES_ROOT\.md\ShellNew 右键ShellNew，新建字符串值，NullFile 给新建md文件自定义模板效果图： 实现方法： 右键ShellNew，新建项，FileName ，填入数值hexo.md(随意一个你想要的模板文档) 打开C:\Windows\SHELLNEW，新建hexo.md，写入所需内容]]></content>
+    <content type="text"><![CDATA[新建md文件并自定义模板 右键菜单新建md文件效果图： 实现方法 打开运行，输入regedit 打开计算机\HKEY_CLASSES_ROOT右键查找，输入Typora 确认是否有该程序可运行 如果使用的是其他markdown编辑器，同理 新建.reg文件，输入以下内容 1234567Windows Registry Editor Version 5.00[HKEY_CLASSES_ROOT\.md]@=&quot;Typora.exe&quot;[HKEY_CLASSES_ROOT\.md\ShellNew]&quot;NullFile&quot;=&quot;&quot;[HKEY_CLASSES_ROOT\Typora.exe]@=&quot;Markdown&quot; @=&quot;Typora.exe&quot; 代表的是指定.md文件的运行程序 @=&quot;Markdown&quot; 代表的是右键时默认的文件名字，这样写新建为新建Markdown.md文件，而且右键菜单中显示MarkDown 编辑好之后,双击运行，结果如图所示: 给新建md文件自定义模板效果图： 实现方法： 右键ShellNew，新建项，FileName ，填入数值hexo.md(随意一个你想要的模板文档) 打开C:\Windows\SHELLNEW(若没有则新建)，新建hexo.md，写入所需内容 编辑新建图标(非必须) 以Typora为例,在注册表Typora.exe下点击项DefaultIcon,右键修改 将属性修改为想要设置的Markdown文件图标]]></content>
       <tags>
         <tag>右键菜单</tag>
         <tag>新建md文件</tag>
