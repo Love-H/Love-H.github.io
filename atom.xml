@@ -37,26 +37,23 @@
   </entry>
   
   <entry>
-    <title>宝塔Linux下FTP无法连接</title>
-    <link href="https://love-h.github.io/2020/02/03/%E5%AE%9D%E5%A1%94Linux%E4%B8%8BFTP%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5/"/>
-    <id>https://love-h.github.io/2020/02/03/宝塔Linux下FTP无法连接/</id>
+    <title>MySQL5.7.20安装</title>
+    <link href="https://love-h.github.io/2020/02/03/Mysql5.7.20%E5%AE%89%E8%A3%85/"/>
+    <id>https://love-h.github.io/2020/02/03/Mysql5.7.20安装/</id>
     <published>2020-02-03T11:48:34.000Z</published>
-    <updated>2020-02-18T04:41:28.615Z</updated>
+    <updated>2020-02-03T16:06:32.578Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"></blockquote><a id="more"></a><blockquote class="blockquote-center"></blockquote><!-- more --><blockquote><p>再三声明，以下信息源自：<a href="https://blog.csdn.net/qq_39240270/article/details/93531345，本人仅对其备份留以自用" target="_blank" rel="noopener">https://blog.csdn.net/qq_39240270/article/details/93531345，本人仅对其备份留以自用</a></p></blockquote><h1 id="宝塔Linux面板FTP无法连接的解决办法"><a href="#宝塔Linux面板FTP无法连接的解决办法" class="headerlink" title="宝塔Linux面板FTP无法连接的解决办法"></a>宝塔Linux面板FTP无法连接的解决办法</h1><p>原创<a href="https://me.csdn.net/hc1104" target="_blank" rel="noopener">止境</a> 最后发布于2018-05-22 10:20:18 阅读数 35119 收藏<br><a href="https://blog.csdn.net/home/help.html#level" target="_blank" rel="noopener"> </a>原创 54  粉丝 11  获赞 5  评论 11  访问 10万+ </p><p>展开</p><p>如果使用的是阿里云服务器，需要在安全组设置中，对22、21端口放行，并且被动端口（39000 - 40000）也需要处于放行状态</p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/2018052210054419.png" alt="img"></p><p>宝塔Linux面板在使用sftp用最高权限连接时一切正常，但是使用在宝塔里面创建的ftp的账号密码，就无法登陆，相信大家遇到过这样的问题。遇到这样的问题，需要修改一些配置。</p><p>第一步：进入宝塔Linux面板中的软件管理，找到Pure-Ftpd 1.0.47点设置</p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/20180522101012711.png" alt="img"></p><p>第二步：点击配置修改：如图所示，查找“ForcePassiveIP”（位置188行左右），搜索：</p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/20180522101416148.png" alt="img"></p><p>第三步：将后面的192.168.0.1 修改为你自己的阿里云服务器公网IP地址，同时，去掉ForcePassiveIP的“#”号。然后保存。</p><p>第四步：重启服务</p><p>第五步：进入xftp中设置相关信息，输入创建的ftp账号密码（不是root的），使用的协议不是sftp，而是ftp，端口是21，<strong>注意在选项里面，将传输类型勾选使用被动模式。</strong></p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/20180522101720875.png" alt="img"></p><p>最后，连接成功。</p><p>参考文章:</p><ul><li><a href="https://blog.csdn.net/qq_39240270/article/details/93531345" target="_blank" rel="noopener">https://blog.csdn.net/qq_39240270/article/details/93531345</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>MySQL5.7.20安装</p></blockquote><a id="more"></a><blockquote><p>原文链接<a href="https://segmentfault.com/a/1190000016226855，仅做记录" target="_blank" rel="noopener">https://segmentfault.com/a/1190000016226855，仅做记录</a></p></blockquote><h1 id="问题状况"><a href="#问题状况" class="headerlink" title="问题状况"></a>问题状况</h1><p>在Win10下使用mysql-installer-community-5.7.20.0的msi包进行安装，试了好多次，MySQL Server 5.7.20的安装状态都显示为Failed，安装失败。</p><p><img src="/2020/02/03/Mysql5.7.20安装/1716293223-5b88ef503d70b_articlex.png" alt="clipboard.png"></p><p>MySQL installer详细日志如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1: Action 20:16:10: INSTALL.</span><br><span class="line"></span><br><span class="line">1: 1: MySQL Server 5.7 2: &#123;81B27388-3733-4B65-8D84-AD9C9113B498&#125;</span><br><span class="line"></span><br><span class="line">1: Action 20:16:10: FindRelatedProducts. Searching for related applications</span><br><span class="line"></span><br><span class="line">1: Action 20:16:10: AppSearch. Searching for installed applications</span><br><span class="line"></span><br><span class="line">1: Action 20:16:11: LaunchConditions. Evaluating launch conditions</span><br><span class="line"></span><br><span class="line">1: This application requires Visual Studio 2013 Redistributable. Please install the Redistributable then run this installer again.</span><br><span class="line"></span><br><span class="line">1: 1: MySQL Server 5.7 2: &#123;81B27388-3733-4B65-8D84-AD9C9113B498&#125; 3: 3</span><br><span class="line"></span><br><span class="line">1: The action &apos;Install&apos; for product &apos;MySQL Server 5.7.20&apos; failed.</span><br></pre></td></tr></table></figure><p>仔细查看日志，发现”This application requires Visual Studio 2013 Redistributable. Please install the Redistributable then run this installer again.”，在安装过程中确实提示需要安装Microsoft Visual c++ 2013 Redistributable。</p><p><img src="/2020/02/03/Mysql5.7.20安装/832221067-5b88f0646c192_articlex.png" alt="clipboard.png"></p><p>可是我已经按照提示安装了，在系统的程序和功能里面也能看到”Microsoft Visual c++ 2013 Redistributable(X64) - 12.0.30501”的安装信息。</p><p><img src="/2020/02/03/Mysql5.7.20安装/3166131024-5b88f0ac477f9_articlex.png" alt="clipboard.png"></p><p>但是日志里面还是提示需要安装Visual Studio 2013 Redistributable。</p><h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>试着搜索了一下，按照网上的提示升级安装了12.0.40660版本的Microsoft Visual c++ 2013 Redistributable，再安装MySQL Server 5.7.20，果然问题就解决了。</p><p><img src="/2020/02/03/Mysql5.7.20安装/3179895256-5b88f0ce1a863_articlex.png" alt="clipboard.png"></p><p><img src="/2020/02/03/Mysql5.7.20安装/2711878176-5b88f0dcc3a7f_articlex.png" alt="clipboard.png"></p><p>暂时不知道是什么原因，可能是mysql-community-5.7.20.0版的bug吧。<br>附上Microsoft Visual C++ 2013 Redistributable Package 12.0.40660的下载链接：<br>来源: <a href="https://support.microsoft.com/en-us/kb/3179560" target="_blank" rel="noopener">Microsoft Support</a></p><p>x86：<a href="http://download.microsoft.com/download/1/8/0/180FA2CE-506D-4032-AAD1-9D7636F85179/vcredist_x86.exe" target="_blank" rel="noopener">点击下载</a></p><p>x64：<a href="http://download.microsoft.com/download/1/8/0/180FA2CE-506D-4032-AAD1-9D7636F85179/vcredist_x64.exe" target="_blank" rel="noopener">点击下载</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;MySQL5.7.20安装&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
     
-      <category term="Linux" scheme="https://love-h.github.io/tags/Linux/"/>
-    
-      <category term="宝塔" scheme="https://love-h.github.io/tags/%E5%AE%9D%E5%A1%94/"/>
-    
-      <category term="FTP" scheme="https://love-h.github.io/tags/FTP/"/>
+      <category term="MySQL" scheme="https://love-h.github.io/tags/MySQL/"/>
     
   </entry>
   
@@ -105,6 +102,30 @@
     
     
       <category term="git" scheme="https://love-h.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宝塔Linux下FTP无法连接</title>
+    <link href="https://love-h.github.io/2020/02/03/%E5%AE%9D%E5%A1%94Linux%E4%B8%8BFTP%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5/"/>
+    <id>https://love-h.github.io/2020/02/03/宝塔Linux下FTP无法连接/</id>
+    <published>2020-02-03T11:48:34.000Z</published>
+    <updated>2020-02-18T04:41:28.615Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"></blockquote><a id="more"></a><blockquote class="blockquote-center"></blockquote><!-- more --><blockquote><p>再三声明，以下信息源自：<a href="https://blog.csdn.net/qq_39240270/article/details/93531345，本人仅对其备份留以自用" target="_blank" rel="noopener">https://blog.csdn.net/qq_39240270/article/details/93531345，本人仅对其备份留以自用</a></p></blockquote><h1 id="宝塔Linux面板FTP无法连接的解决办法"><a href="#宝塔Linux面板FTP无法连接的解决办法" class="headerlink" title="宝塔Linux面板FTP无法连接的解决办法"></a>宝塔Linux面板FTP无法连接的解决办法</h1><p>原创<a href="https://me.csdn.net/hc1104" target="_blank" rel="noopener">止境</a> 最后发布于2018-05-22 10:20:18 阅读数 35119 收藏<br><a href="https://blog.csdn.net/home/help.html#level" target="_blank" rel="noopener"> </a>原创 54  粉丝 11  获赞 5  评论 11  访问 10万+ </p><p>展开</p><p>如果使用的是阿里云服务器，需要在安全组设置中，对22、21端口放行，并且被动端口（39000 - 40000）也需要处于放行状态</p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/2018052210054419.png" alt="img"></p><p>宝塔Linux面板在使用sftp用最高权限连接时一切正常，但是使用在宝塔里面创建的ftp的账号密码，就无法登陆，相信大家遇到过这样的问题。遇到这样的问题，需要修改一些配置。</p><p>第一步：进入宝塔Linux面板中的软件管理，找到Pure-Ftpd 1.0.47点设置</p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/20180522101012711.png" alt="img"></p><p>第二步：点击配置修改：如图所示，查找“ForcePassiveIP”（位置188行左右），搜索：</p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/20180522101416148.png" alt="img"></p><p>第三步：将后面的192.168.0.1 修改为你自己的阿里云服务器公网IP地址，同时，去掉ForcePassiveIP的“#”号。然后保存。</p><p>第四步：重启服务</p><p>第五步：进入xftp中设置相关信息，输入创建的ftp账号密码（不是root的），使用的协议不是sftp，而是ftp，端口是21，<strong>注意在选项里面，将传输类型勾选使用被动模式。</strong></p><p><img src="/2020/02/03/宝塔Linux下FTP无法连接/20180522101720875.png" alt="img"></p><p>最后，连接成功。</p><p>参考文章:</p><ul><li><a href="https://blog.csdn.net/qq_39240270/article/details/93531345" target="_blank" rel="noopener">https://blog.csdn.net/qq_39240270/article/details/93531345</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://love-h.github.io/tags/Linux/"/>
+    
+      <category term="宝塔" scheme="https://love-h.github.io/tags/%E5%AE%9D%E5%A1%94/"/>
+    
+      <category term="FTP" scheme="https://love-h.github.io/tags/FTP/"/>
     
   </entry>
   
@@ -198,27 +219,6 @@
       <category term="hexo" scheme="https://love-h.github.io/tags/hexo/"/>
     
       <category term="博客备份" scheme="https://love-h.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL5.7.20安装</title>
-    <link href="https://love-h.github.io/2020/02/03/Mysql5.7.20%E5%AE%89%E8%A3%85/"/>
-    <id>https://love-h.github.io/2020/02/03/Mysql5.7.20安装/</id>
-    <published>2020-02-03T11:48:34.000Z</published>
-    <updated>2020-02-03T16:06:32.578Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>MySQL5.7.20安装</p></blockquote><a id="more"></a><blockquote><p>原文链接<a href="https://segmentfault.com/a/1190000016226855，仅做记录" target="_blank" rel="noopener">https://segmentfault.com/a/1190000016226855，仅做记录</a></p></blockquote><h1 id="问题状况"><a href="#问题状况" class="headerlink" title="问题状况"></a>问题状况</h1><p>在Win10下使用mysql-installer-community-5.7.20.0的msi包进行安装，试了好多次，MySQL Server 5.7.20的安装状态都显示为Failed，安装失败。</p><p><img src="/2020/02/03/Mysql5.7.20安装/1716293223-5b88ef503d70b_articlex.png" alt="clipboard.png"></p><p>MySQL installer详细日志如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1: Action 20:16:10: INSTALL.</span><br><span class="line"></span><br><span class="line">1: 1: MySQL Server 5.7 2: &#123;81B27388-3733-4B65-8D84-AD9C9113B498&#125;</span><br><span class="line"></span><br><span class="line">1: Action 20:16:10: FindRelatedProducts. Searching for related applications</span><br><span class="line"></span><br><span class="line">1: Action 20:16:10: AppSearch. Searching for installed applications</span><br><span class="line"></span><br><span class="line">1: Action 20:16:11: LaunchConditions. Evaluating launch conditions</span><br><span class="line"></span><br><span class="line">1: This application requires Visual Studio 2013 Redistributable. Please install the Redistributable then run this installer again.</span><br><span class="line"></span><br><span class="line">1: 1: MySQL Server 5.7 2: &#123;81B27388-3733-4B65-8D84-AD9C9113B498&#125; 3: 3</span><br><span class="line"></span><br><span class="line">1: The action &apos;Install&apos; for product &apos;MySQL Server 5.7.20&apos; failed.</span><br></pre></td></tr></table></figure><p>仔细查看日志，发现”This application requires Visual Studio 2013 Redistributable. Please install the Redistributable then run this installer again.”，在安装过程中确实提示需要安装Microsoft Visual c++ 2013 Redistributable。</p><p><img src="/2020/02/03/Mysql5.7.20安装/832221067-5b88f0646c192_articlex.png" alt="clipboard.png"></p><p>可是我已经按照提示安装了，在系统的程序和功能里面也能看到”Microsoft Visual c++ 2013 Redistributable(X64) - 12.0.30501”的安装信息。</p><p><img src="/2020/02/03/Mysql5.7.20安装/3166131024-5b88f0ac477f9_articlex.png" alt="clipboard.png"></p><p>但是日志里面还是提示需要安装Visual Studio 2013 Redistributable。</p><h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>试着搜索了一下，按照网上的提示升级安装了12.0.40660版本的Microsoft Visual c++ 2013 Redistributable，再安装MySQL Server 5.7.20，果然问题就解决了。</p><p><img src="/2020/02/03/Mysql5.7.20安装/3179895256-5b88f0ce1a863_articlex.png" alt="clipboard.png"></p><p><img src="/2020/02/03/Mysql5.7.20安装/2711878176-5b88f0dcc3a7f_articlex.png" alt="clipboard.png"></p><p>暂时不知道是什么原因，可能是mysql-community-5.7.20.0版的bug吧。<br>附上Microsoft Visual C++ 2013 Redistributable Package 12.0.40660的下载链接：<br>来源: <a href="https://support.microsoft.com/en-us/kb/3179560" target="_blank" rel="noopener">Microsoft Support</a></p><p>x86：<a href="http://download.microsoft.com/download/1/8/0/180FA2CE-506D-4032-AAD1-9D7636F85179/vcredist_x86.exe" target="_blank" rel="noopener">点击下载</a></p><p>x64：<a href="http://download.microsoft.com/download/1/8/0/180FA2CE-506D-4032-AAD1-9D7636F85179/vcredist_x64.exe" target="_blank" rel="noopener">点击下载</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;MySQL5.7.20安装&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="MySQL" scheme="https://love-h.github.io/tags/MySQL/"/>
     
   </entry>
   
@@ -338,29 +338,6 @@
   </entry>
   
   <entry>
-    <title>Linux中vim设置显示行号等配置</title>
-    <link href="https://love-h.github.io/2019/10/20/Linux%E4%B8%ADvim%E8%AE%BE%E7%BD%AE%E6%B0%B8%E4%B9%85%E6%98%BE%E7%A4%BA%E8%A1%8C%E5%8F%B7%E7%AD%89%E9%85%8D%E7%BD%AE/"/>
-    <id>https://love-h.github.io/2019/10/20/Linux中vim设置永久显示行号等配置/</id>
-    <published>2019-10-20T02:53:42.000Z</published>
-    <updated>2019-10-20T03:02:21.537Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>Linux中vim设置永久显示行号、开启语法高亮等配置</p></blockquote><a id="more"></a><h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><ul><li>先复制一份<code>vim</code>配置模板到个人目录下</li></ul><p><code>cp /etc/vimrc ~/.vimrc</code></p><ul><li>编辑所复制的配置模板</li></ul><p><code>vi ~/.vimrc</code></p><p><img src="/2019/10/20/Linux中vim设置永久显示行号等配置/1571540134444.png" alt="1571540134444"></p><ul><li>相应命令如下</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">set nu!                     <span class="string">"显示行号</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set guifont=Luxi/ Mono/ 9   "</span>设置字体，字体名称和字号</span><br><span class="line"></span><br><span class="line">filetype on                  <span class="string">"检测文件的类型     </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set history=1000             "</span>记录历史的行数</span><br><span class="line"></span><br><span class="line">set background=dark          <span class="string">"背景使用黑色</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">syntax on                    "</span>语法高亮度显示</span><br><span class="line"></span><br><span class="line">set autoindent               <span class="string">"vim使用自动对齐，也就是把当前行的对齐格式应用到下一行(自动缩进）</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set cindent                  "</span>（cindent是特别针对 C语言语法自动缩进）</span><br><span class="line"></span><br><span class="line">set smartindent              <span class="string">"依据上面的对齐格式，智能的选择对齐方式，对于类似C语言编写上有用   </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set tabstop=4                "</span>设置tab键为<span class="number">4</span>个空格，</span><br><span class="line"></span><br><span class="line">set shiftwidth =<span class="number">4</span>            <span class="string">"设置当行之间交错时使用4个空格     </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set ai!                      "</span> 设置自动缩进 </span><br><span class="line"></span><br><span class="line">set showmatch                <span class="string">"设置匹配模式，类似当输入一个左括号时会匹配相应的右括号      </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set guioptions-=T            "</span>去除vim的GUI版本中得toolbar   </span><br><span class="line"></span><br><span class="line">set vb t_vb=                 <span class="string">"当vim进行编辑时，如果命令错误，会发出警报，该设置去掉警报       </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set ruler                  "</span>在编辑过程中，在右下角显示光标位置的状态行     </span><br><span class="line"></span><br><span class="line">set nohls                  <span class="string">"默认情况下，寻找匹配是高亮度显示，该设置关闭高亮显示     </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set incsearch              "</span>在程序中查询一单词，自动匹配单词的位置；如查询desk单词，当输到/d时，会自动找到第一个d开头的单词，当输入到/de时，会自动找到第一个以ds开头的单词，以此类推，进行查找；当找到要匹配的单词时，别忘记回车 </span><br><span class="line"></span><br><span class="line">set backspace=<span class="number">2</span>           <span class="string">" 设置退格键可用</span></span><br></pre></td></tr></table></figure><p><img src="/2019/10/20/Linux中vim设置永久显示行号等配置/1571540424589.png" alt="1571540424589" style="zoom:50%;"></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;Linux中vim设置永久显示行号、开启语法高亮等配置&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://love-h.github.io/tags/Linux/"/>
-    
-      <category term="vim" scheme="https://love-h.github.io/tags/vim/"/>
-    
-  </entry>
-  
-  <entry>
     <title>20191020</title>
     <link href="https://love-h.github.io/2019/10/20/20191020/"/>
     <id>https://love-h.github.io/2019/10/20/20191020/</id>
@@ -380,6 +357,29 @@
       <category term="dailySummary" scheme="https://love-h.github.io/tags/dailySummary/"/>
     
       <category term="随笔" scheme="https://love-h.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux中vim设置显示行号等配置</title>
+    <link href="https://love-h.github.io/2019/10/20/Linux%E4%B8%ADvim%E8%AE%BE%E7%BD%AE%E6%B0%B8%E4%B9%85%E6%98%BE%E7%A4%BA%E8%A1%8C%E5%8F%B7%E7%AD%89%E9%85%8D%E7%BD%AE/"/>
+    <id>https://love-h.github.io/2019/10/20/Linux中vim设置永久显示行号等配置/</id>
+    <published>2019-10-20T02:53:42.000Z</published>
+    <updated>2019-10-20T03:02:21.537Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>Linux中vim设置永久显示行号、开启语法高亮等配置</p></blockquote><a id="more"></a><h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><ul><li>先复制一份<code>vim</code>配置模板到个人目录下</li></ul><p><code>cp /etc/vimrc ~/.vimrc</code></p><ul><li>编辑所复制的配置模板</li></ul><p><code>vi ~/.vimrc</code></p><p><img src="/2019/10/20/Linux中vim设置永久显示行号等配置/1571540134444.png" alt="1571540134444"></p><ul><li>相应命令如下</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">set nu!                     <span class="string">"显示行号</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set guifont=Luxi/ Mono/ 9   "</span>设置字体，字体名称和字号</span><br><span class="line"></span><br><span class="line">filetype on                  <span class="string">"检测文件的类型     </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set history=1000             "</span>记录历史的行数</span><br><span class="line"></span><br><span class="line">set background=dark          <span class="string">"背景使用黑色</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">syntax on                    "</span>语法高亮度显示</span><br><span class="line"></span><br><span class="line">set autoindent               <span class="string">"vim使用自动对齐，也就是把当前行的对齐格式应用到下一行(自动缩进）</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set cindent                  "</span>（cindent是特别针对 C语言语法自动缩进）</span><br><span class="line"></span><br><span class="line">set smartindent              <span class="string">"依据上面的对齐格式，智能的选择对齐方式，对于类似C语言编写上有用   </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set tabstop=4                "</span>设置tab键为<span class="number">4</span>个空格，</span><br><span class="line"></span><br><span class="line">set shiftwidth =<span class="number">4</span>            <span class="string">"设置当行之间交错时使用4个空格     </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set ai!                      "</span> 设置自动缩进 </span><br><span class="line"></span><br><span class="line">set showmatch                <span class="string">"设置匹配模式，类似当输入一个左括号时会匹配相应的右括号      </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set guioptions-=T            "</span>去除vim的GUI版本中得toolbar   </span><br><span class="line"></span><br><span class="line">set vb t_vb=                 <span class="string">"当vim进行编辑时，如果命令错误，会发出警报，该设置去掉警报       </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set ruler                  "</span>在编辑过程中，在右下角显示光标位置的状态行     </span><br><span class="line"></span><br><span class="line">set nohls                  <span class="string">"默认情况下，寻找匹配是高亮度显示，该设置关闭高亮显示     </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set incsearch              "</span>在程序中查询一单词，自动匹配单词的位置；如查询desk单词，当输到/d时，会自动找到第一个d开头的单词，当输入到/de时，会自动找到第一个以ds开头的单词，以此类推，进行查找；当找到要匹配的单词时，别忘记回车 </span><br><span class="line"></span><br><span class="line">set backspace=<span class="number">2</span>           <span class="string">" 设置退格键可用</span></span><br></pre></td></tr></table></figure><p><img src="/2019/10/20/Linux中vim设置永久显示行号等配置/1571540424589.png" alt="1571540424589" style="zoom:50%;"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;Linux中vim设置永久显示行号、开启语法高亮等配置&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://love-h.github.io/tags/Linux/"/>
+    
+      <category term="vim" scheme="https://love-h.github.io/tags/vim/"/>
     
   </entry>
   
